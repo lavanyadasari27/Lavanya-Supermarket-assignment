@@ -1,0 +1,69 @@
+{
+  "user": {
+    "storename":"",
+    "address":"221B Baker Street ",
+    "Phone number": 12345678
+  },
+  "shoppingList": [
+    {
+      "name": "Rice",
+      "measurement":"1 Kg",
+      "quantity": 1,
+      "category": "Essential"
+    },
+    {
+      "name": "Bread",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Essential"
+    },
+    {
+      "name": "Milk",
+      "measurement":"1 Kg",
+      "quantity": 1,
+      "category": "Essential"
+    },
+    {
+      "name": "Meat",
+      "measurement":"1 Kg",
+      "quantity": 5,
+      "category": "Essential"
+    },
+    {
+      "name": "Battery",
+      "measurement":"1 Kg",
+      "quantity": 4,
+      "category": "Luxury"
+    },
+    {
+      "name": "Chocolates",
+      "measurement":"1 Kg",
+      "quantity": 1,
+      "category": "Luxury"
+    },
+    {
+      "name": "Detergent",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Default"
+    },
+    {
+      "name": "Toothpaste",
+      "measurement":"1 Kg",
+      "quantity": 3,
+      "category": "Default"
+    },
+    {
+      "name": "Cool drink",
+      "measurement":"1 Kg",
+      "quantity": 1,
+      "category": "Fruits"
+    },
+    {
+      "name": "Fruits",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Essential"
+    }
+  ]
+}
