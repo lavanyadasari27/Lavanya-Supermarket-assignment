@@ -3,6 +3,7 @@ const fs = require("fs");
 const jsonString = fs.readFileSync("./shoppingList.json", "utf-8");
 const jsonData = JSON.parse(jsonString);
 
+
 function UserDetails(user) {
   return `
     <p><strong>Store Name:</strong> ${user.storename}</p>
@@ -11,7 +12,9 @@ function UserDetails(user) {
 }
 
 
+
 function generateHTML(data) {
+  const userDetailsHTML = UserDetails(data.user);
 
   return `
     <!DOCTYPE html>
@@ -23,15 +26,13 @@ function generateHTML(data) {
     </head>
     <body>
       <h1>User Information</h1>
-      ${UserDetails}
+      ${userDetailsHTML}
+      
       <h1>Shopping List</h1>
        
     </body>
     </html>`;
 }
 
-
-
-
-const htmlContent = generateHTML(jsonData);
-fs.writeFileSync("./shoppingList.html", htmlContent);
+const Content = generateHTML(jsonData);
+fs.writeFileSync("./shoppingList.html", Content);
