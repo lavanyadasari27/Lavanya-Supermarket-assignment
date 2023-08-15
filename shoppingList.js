@@ -12,7 +12,6 @@ function UserDetails(user) {
 }
 
 
-
 function generateHTML(data) {
   const userDetailsHTML = UserDetails(data.user);
 
