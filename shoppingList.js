@@ -3,6 +3,12 @@ const fs = require("fs");
 const jsonString = fs.readFileSync("./shoppingList.json", "utf-8");
 const jsonData = JSON.parse(jsonString);
 
+function UserDetails(user) {
+  return `
+    <p><strong>Store Name:</strong> ${user.storename}</p>
+    <p><strong>Address:</strong> ${user.address}</p>
+    <p><strong>Phone Number:</strong> ${user["Phone number"]}</p>`;
+}
 
 
 function generateHTML(data) {
@@ -17,7 +23,7 @@ function generateHTML(data) {
     </head>
     <body>
       <h1>User Information</h1>
-      
+      ${UserDetails}
       <h1>Shopping List</h1>
        
     </body>
