@@ -22,12 +22,20 @@ th{
 #foot{
 text-align: center;
 }
+
 #list{
     text-align: center;
 }
-#table{
+table{
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+p{
     text-align: center;
 }
-#alignment{
-    text-align: center;
+
+#font{
+    font-family: 'Courier New', Courier, monospace;
 }

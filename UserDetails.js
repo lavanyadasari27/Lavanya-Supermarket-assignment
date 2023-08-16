@@ -10,8 +10,7 @@ function UserDetails(user) {
    <div>
     <p>GST NO:${user["GST NO"]}, PH:${user["Phone number"]}</p>
     </div>
-    </div>
-    `;
+    </div>`;
 }
 
 module.exports = UserDetails;

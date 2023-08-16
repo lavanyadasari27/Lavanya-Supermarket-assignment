@@ -18,13 +18,13 @@ function generateHTML(data) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Shopping List</title>
     </head>
-    <body>
+    <body id="font">
     <div>
       <p>${userDetailsHTML}</p> 
       <p>${shoppingListHTML}</p>  
     </div>
 
-    <div id="foot" >
+    <div id="foot">
     <strong>Thank you & Visit Again</strong>
     <br>For Queries & Complaints 
     WhatsApp using 9100811811

@@ -10,10 +10,10 @@ function ShoppingListDetails(shoppingList) {
   ***************************** TAX INVOICE ******************************
   </div>
   <div id="alignment">
-  <p>-------------------------------------------------------------------------------------------------------</p>
+  <p>---------------------------------------------------------------------</p>
   </div>
   <div id="description">
-  <table style="margin:0 auto">
+  <table>
   <strong>
   <tr>
   <th>Name</th>
@@ -44,17 +44,17 @@ function ShoppingListDetails(shoppingList) {
     </tr>
     </div>
     </div>
-    <div>
-    </div>
     `;
   });
   shoppingListDescription += ` 
   </table>
-    <p>-------------------------------------------------------------------------------------------------------</p>
-    <div">
+  <div id="alignment">
+    <p>---------------------------------------------------------------------</p>
+    </div>
+    <div id="TotalAmount">
     <strong>Total: ${Total.toFixed(2)}</strong>
     <br><strong>Grand Total: ${grandTotal.toFixed(2)}</strong>
-    <br>-------------------------------------------------------------------------------------------------------
+    <br>---------------------------------------------------------------------
     </div>`;
 
   return shoppingListDescription;
