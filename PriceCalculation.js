@@ -5,15 +5,24 @@ function ShoppingListDetails(shoppingList) {
   let grandTotal = 0;
 
   let shoppingListDescription = `
-  <div>
-  <div>
+  <div id="cart_details">
+  <div id="Tax_invoice">
   ***************************** TAX INVOICE ******************************
   </div>
-  <div><th>Name</th>
+  <div id="alignment">
+  <p>-------------------------------------------------------------------------------------------------------</p>
+  </div>
+  <div id="description">
+  <table style="margin:0 auto">
+  <strong>
+  <tr>
+  <th>Name</th>
   <th>Quantity</th>
   <th>Measurement</th>
-  <th>Category</th>
-  <p>---------------------------------------------------------------------</p>
+  <th>Price</th>
+  <th>Price(Includes GST)</th>
+  </strong>
+   </tr>
   </div>
   </div>`;
   shoppingList.forEach((item) => {
@@ -24,18 +33,28 @@ function ShoppingListDetails(shoppingList) {
     Total += item.Price * item.quantity;
     grandTotal += itemAmountWithGST;
     shoppingListDescription += ` 
+    <div id="items">
+    <div id="list">
+    <tr>
+    <td>${item.name}</td>
+    <td> ${item.quantity}</td>
+     <td>${item.measurement}</td>
+     <td>${item.Price}</td>
+     <td>${itemAmountWithGST.toFixed(2)}</td>
+    </tr>
+    </div>
+    </div>
     <div>
-    <p>${item.name} ${item.quantity} ${item.measurement} ${
-      item.Price
-    } ${itemAmountWithGST.toFixed(2)}  </p>
-    <p>--------------------------------------------------------------------</p>
-    </div>`;
+    </div>
+    `;
   });
   shoppingListDescription += ` 
-    <div>
+  </table>
+    <p>-------------------------------------------------------------------------------------------------------</p>
+    <div">
     <strong>Total: ${Total.toFixed(2)}</strong>
     <br><strong>Grand Total: ${grandTotal.toFixed(2)}</strong>
-    <br>--------------------------------------------------------------------
+    <br>-------------------------------------------------------------------------------------------------------
     </div>`;
 
   return shoppingListDescription;
