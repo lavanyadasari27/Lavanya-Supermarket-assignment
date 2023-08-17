@@ -5,6 +5,7 @@ function ShoppingListDetails(shoppingList) {
   let grandTotal = 0;
   let totalGST = 0;
   let discount = 0;
+  let itemAfterDiscount = 0;
 
   let shoppingListDescription = `
   <div id="cart_details">
@@ -22,7 +23,7 @@ function ShoppingListDetails(shoppingList) {
   <th>Quantity</th>
   <th>Measurement</th>
   <th>Price</th>
-  <th>GST</th>
+  <th>GST(Item level)</th>
   </strong>
    </tr>
   </div>
@@ -30,7 +31,8 @@ function ShoppingListDetails(shoppingList) {
   shoppingList.forEach((item) => {
     const gstPrice = itemGST(item);
     totalGST += gstPrice * item.quantity;
-    Total += item.Price * item.quantity;
+    itemAfterDiscount = item.Price * 0.9;
+    Total += itemAfterDiscount * item.quantity;
     shoppingListDescription += ` 
     <div id="items">
     <div id="list">
@@ -45,14 +47,8 @@ function ShoppingListDetails(shoppingList) {
     </div>
     `;
   });
-  if (Total >= 500 && Total < 1000) {
-    discount = Total * 0.05;
-  } else if (Total >= 1000 && Total < 1500) {
+  if (Total > 1000) {
     discount = Total * 0.1;
-  } else if (Total >= 1500 && Total < 2000) {
-    discount = Total * 0.15;
-  } else {
-    discount = Total * 0.2;
   }
   grandTotal = Total - discount + totalGST;
   shoppingListDescription += ` 
@@ -62,7 +58,7 @@ function ShoppingListDetails(shoppingList) {
     </div>
     <div id="TotalAmount">
     <strong>Total: ${Total.toFixed(2)}</strong>
-    <br><strong>Discount: -${discount}</strong><br>
+    <br><strong>Store level Discount: -${discount}</strong><br>
     <strong>GST: +${totalGST}</strong><br>
     <strong>Grand Total: ${grandTotal.toFixed(2)}</strong>
     <br>---------------------------------------------------------------------
