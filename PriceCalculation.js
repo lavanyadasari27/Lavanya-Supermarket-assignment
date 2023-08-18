@@ -28,10 +28,12 @@ function ShoppingListDetails(shoppingList) {
    </tr>
   </div>
   </div>`;
+
+  const discountPercentage=0.9;
   shoppingList.forEach((item) => {
     const gstPrice = itemGST(item);
     totalGST += gstPrice * item.quantity;
-    itemAfterDiscount = item.Price * 0.9;
+    itemAfterDiscount = item.Price * discountPercentage;
     Total += itemAfterDiscount * item.quantity;
     shoppingListDescription += ` 
     <div id="items">
@@ -47,8 +49,10 @@ function ShoppingListDetails(shoppingList) {
     </div>
     `;
   });
+
+  const dicountAmount=0.1;
   if (Total > 1000) {
-    discount = Total * 0.1;
+    discount = Total * dicountAmount;
   }
   grandTotal = Total - discount + totalGST;
   shoppingListDescription += ` 
