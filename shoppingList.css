@@ -1,0 +1,41 @@
+#store_details{
+    margin-top: 70px;
+    text-align: center;
+}
+
+#Tax_invoice{
+    text-align: center;
+    margin-top: 60px;
+}
+
+#description{
+    text-align: center;
+}
+th{
+    padding: 10px;
+}
+
+#items{
+    text-align: center;
+}
+
+#foot{
+text-align: center;
+}
+
+#list{
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+p{
+    text-align: center;
+}
+
+#font{
+    font-family: 'Courier New', Courier, monospace;
+}

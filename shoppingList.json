@@ -1,0 +1,80 @@
+{
+  "user": {
+    "storename":"RATNADEEP RETAIL PRIVATE LIMITED \n (Formely known as RATNADEEP S M P L)",
+    "address":"221B Baker Street ",
+    "Phone number": 12345678,
+    "GST NO":"29AAOFT9781D1Ze"
+  },
+  "shoppingList": [
+    {
+      "name": "Rice",
+      "measurement":"1 Kg",
+      "quantity": 1,
+      "category": "Essential",
+      "Price": 50.00
+    },
+    {
+      "name": "Bread",
+      "measurement":"1 Packet",
+      "quantity": 2,
+      "category": "Essential",
+      "Price": 25.00
+    },
+    {
+      "name": "Milk",
+      "measurement":"1 L",
+      "quantity": 1,
+      "category": "Essential",
+      "Price": 60.00
+    },
+    {
+      "name": "Meat",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Essential",
+      "Price": 250.00
+    },
+    {
+      "name": "Battery",
+      "measurement":"1 Packet",
+      "quantity": 4,
+      "category": "Luxury",
+      "Price":35.00
+    },
+    {
+      "name": "Chocolates",
+      "measurement":"1 Packet",
+      "quantity": 1,
+      "category": "Luxury",
+      "Price":10.00
+    },
+    {
+      "name": "Detergent",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Default",
+      "Price":200.00
+    },
+    {
+      "name": "Toothpaste",
+      "measurement":"1 Packet",
+      "quantity": 3,
+      "category": "Default",
+      "Price": 50.00
+    },
+    {
+      "name": "Cool drink",
+      "measurement":"1 L",
+      "quantity": 1,
+      "category": "Luxury",
+      "Price":40.00
+    },
+    {
+      "name": "Fruits",
+      "measurement":"1 Kg",
+      "quantity": 2,
+      "category": "Essential",
+      "Price":120.00
+    }
+  ]
+}
